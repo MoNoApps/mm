@@ -1,11 +1,15 @@
-# seed
-A seed ready to use:
-
--  Bootstrap
--  Express
--  Angular
+# MongoDB Meetup
+Learn/Teach MongoDB. NodeJS is used as Web Server and API Server.
 
 ## Usage
-node app.js
+````shell
+mongod --dbpath /yourpath/mm
+````
 
-##ToDos
+````js
+node app.js
+````
+## ToDos
+-  Create the API
+-  Create the slider controller on the browser.
+-  Create the editor for slides
