@@ -1,0 +1,99 @@
+var sides1 ={
+  title:"MongoDB Overview",
+  sitemap: {
+    link: " https://www.mongodb.com",
+    sitemap: {
+      link: "https://www.mongodb.com/mongodb-overview"
+    }
+  },
+  body: {
+    p: "MongoDB is the leading NoSQL database, empowering businesses to be more agile and scalable. Fortune 500 companies and startups alike are using MongoDB to create new types of applications, improve customer experience, accelerate time to market and reduce costs."
+    ,list: {
+      items:{
+        "MetLife": "built a 360-degree view of 100M+ customers in 3 months.",
+        "Tier 1 investment bank": "saves $40M over 5 years and improves performance by 200x.",
+        "Mailbox": "reimagined the mobile inbox and scaled to over 1M users in 6 weeks.",
+        "ADP": "delivers mobile experience to 1M users across 17 countries with zero downtime.",
+        "Salesforce": "Marketing Cloud accelerated its roadmap by 12 months.",
+        "Telefonica": "improves performance by 100x, time to market by 4x, and storage costs by 67%."
+      },
+      type: 'list-with-span'
+    }
+  },
+  links: [
+    "https://www.mongodb.com/leading-nosql-database"
+  ]
+};
+
+
+var sides2 ={
+  title:"A New World",
+  body: {
+    p: "MongoDB was designed for how we build and run applications today."
+    ,list: {
+      items:{
+        {
+          title: "New Apps",
+          image: "https://www.mongodb.com/sites/mongodb.com/files/media/MongoDBDatasheetIcons-1.png",
+          body: {
+            p: "The applications serving, generating and interfacing with data have changed. Big Data, SaaS, social and mobile apps are the new norm."
+          },
+        },
+        {
+          title: "New Data Shapes",
+          image: "https://www.mongodb.com/sites/mongodb.com/files/media/MongoDBDatasheetIcons-2.png",
+          body: {
+            p: "Today's applications create demands for semi-structured, polymorphic, object-style, and evolving structured data.",
+            p: "MongoDB handles these new data shapes elegantly."
+          },
+        },
+        {
+          title: "New Data Volumes",
+          image: "https://www.mongodb.com/sites/mongodb.com/files/media/MongoDBDatasheetIcons-3.png",
+          body: {
+            p: "Data volumes were once smaller, constrained and predictable. Today organizations must be prepared to support millions of users, thousands of queries per second and hundreds of terabytes of data."
+          },
+        },
+        {
+          title: "New Development Methods",
+          image: "https://www.mongodb.com/sites/mongodb.com/files/media/MongoDBDatasheetIcons-4.png",
+          body: {
+            p: "The methods we use to build applications have changed. With increasingly competitive markets and the need to adapt constantly, iterative development has become the standard."
+          },
+        },
+        {
+          title: "New Architectures",
+          image: "https://www.mongodb.com/sites/mongodb.com/files/media/MongoDBDatasheetIcons-5.png",
+          body: {
+            p: "The infrastructure on which we store data has changed. Companies are leveraging cloud computing, commodity hardware and virtualization."
+          },
+        }
+      },
+      type: 'list-with-image'
+    }
+  },
+  links: [
+    "https://www.mongodb.com/learn/big-data"
+  ]
+};
+
+var sides3 = {
+  title: "What is MongoDB?",
+  body: {
+    p: "MongoDB is an open-source database used by companies of all sizes, across all industries and for a wide variety of applications. It is an agile database that allows schemas to change quickly as applications evolve, while still providing the functionality developers expect from traditional databases, such as secondary indexes, a full query language and strict consistency.",
+    p: "MongoDB is built for scalability, performance and high availability, scaling from single server deployments to large, complex multi-site architectures. By leveraging in-memory computing, MongoDB provides high performance for both reads and writes. MongoDB’s native replication and automated failover enable enterprise-grade reliability and operational flexibility."
+  },
+  image: "https://www.mongodb.com/sites/mongodb.com/files/media/mongodb_stack.png"
+};
+
+var sides4 = {
+  title:"MongoDB Enterprise",
+  body: {
+    p: "MongoDB Enterprise enables you to be as agile and scalable as a startup while addressing the demanding requirements of a modern, high-growth enterprise. Through consultative, proactive support we partner with you from development to production. Take advantage of management tools, zero-downtime upgrades, disaster recovery, enterprise-grade security, OS certifications and on-demand training.",
+    p: "To get to success faster than ever before, with lower effort, cost and risk, learn more about MongoDB Enterprise."
+  },
+  image: "https://www.mongodb.com/sites/mongodb.com/files/media/mongodb_illustration_enterprise_transparent.gif",
+  links: [
+    "https://www.mongodb.com/products/subscriptions"
+  ]
+};
