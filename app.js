@@ -24,9 +24,11 @@ app.get('/v1/slide/:id/comments', function(req, res) {
 	res.json('No yet implemented');
 });
 
-app.get('/v1/slide:id/views', function(req, res) {
+app.get('/v1/slide/:id/views', function(req, res) {
 	res.json('No yet implemented');
 });
+
+app.get('/v1/slides/seed', slides.Seed);
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log('Express server listening on port ' + app.get('port'));

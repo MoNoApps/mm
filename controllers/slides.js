@@ -28,7 +28,11 @@ Slides.prototype.Remove = function(req, res){
 };
 
 Slides.prototype.Seed = function(req, res){
-  return model.Update();
+  slides_seed =  require('../seed/slides')
+  for (var idx in slides_seed){
+    model.Insert(slides_seed[idx]);
+  }
+  res.json({message:'End Seed'});
 };
 
 module.exports.Slides = Slides;
