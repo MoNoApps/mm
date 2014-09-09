@@ -5,11 +5,9 @@ html(ng-app='MeetupApp')
     link(rel='stylesheet', href='/css/bootstrap.min.css')
     link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
 
-  body(ng-controller='Controller')
+  body
     include layouts/header
-    .container-fluid
-      include content/body
-
+    include content/dash
     include layouts/footer
 
     script(type='text/javascript', src='/js/libs/jquery.min.js')

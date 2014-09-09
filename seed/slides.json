@@ -1,5 +1,6 @@
 {
   "0": {
+    "order": 1,
     "title": "MongoDB Overview",
     "sitemap": {
       "link": "https://www.mongodb.com",
@@ -26,6 +27,7 @@
     ]
   },
   "1": {
+    "order": 2,
     "title":"A New World",
     "body": {
       "p": "MongoDB was designed for how we build and run applications today.",
@@ -76,6 +78,7 @@
     ]
   },
   "2": {
+    "order": 3,
     "title": "What is MongoDB?",
     "body": {
       "p": "MongoDB is an open-source database used by companies of all sizes, across all industries and for a wide variety of applications. It is an agile database that allows schemas to change quickly as applications evolve, while still providing the functionality developers expect from traditional databases, such as secondary indexes, a full query language and strict consistency.",
@@ -84,6 +87,7 @@
     "image": "https://www.mongodb.com/sites/mongodb.com/files/media/mongodb_stack.png"
   },
   "3":{
+    "order": 4,
     "title":"MongoDB Enterprise",
     "body": {
       "p": "MongoDB Enterprise enables you to be as agile and scalable as a startup while addressing the demanding requirements of a modern, high-growth enterprise. Through consultative, proactive support we partner with you from development to production. Take advantage of management tools, zero-downtime upgrades, disaster recovery, enterprise-grade security, OS certifications and on-demand training.",

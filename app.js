@@ -8,13 +8,17 @@ var app = express();
 var Slides =  require("./controllers/slides").Slides;
 var slides =  new Slides();
 
-// all environments
+//Routes
+var Pages =  require("./routes/pages").Pages;
+var pages = new Pages();
+
+//App settings
 app.set('port', process.env.PORT || 1344);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', slides.List);
+app.get('/',             pages.Dash);
 app.get('/v1/slides',    slides.List);
 app.post('/v1/slide',    slides.Create);
 app.put('/v1/slide',     slides.Update);
