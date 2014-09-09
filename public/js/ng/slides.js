@@ -1,9 +1,7 @@
-app.controller('Dashboard', function Dashboard($scope, $http) {
-  var API = "/v1/";
+app.controller('Slides', function Slides($scope, $http, $timeout) {
   $scope.slides = [];
 
   $scope.get_list = function() {
-    $scope.serverImagesList = [];
     $http.get(API + 'slides').
       success(function(data, status, headers, config) {
         $scope.slides = data;
@@ -13,5 +11,7 @@ app.controller('Dashboard', function Dashboard($scope, $http) {
       });
   };
 
-  $scope.get_list();
+  $timeout(function(){
+    $scope.get_list();
+  },150);
 });
