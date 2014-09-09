@@ -8,7 +8,9 @@ var model = new MPill('slides', Config.URL);
 var Slides = function(){};
 
 Slides.prototype.List = function(req, res){
-  res.json(model.Find({}));
+  model.Find({}, function(err, results){
+    res.json(results);
+  });
 };
 
 Slides.prototype.Create = function(req, res){
@@ -28,7 +30,7 @@ Slides.prototype.Remove = function(req, res){
 };
 
 Slides.prototype.Seed = function(req, res){
-  slides_seed =  require('../seed/slides')
+  slides_seed =  require('../seed/slides');
   for (var idx in slides_seed){
     model.Insert(slides_seed[idx]);
   }
