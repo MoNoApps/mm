@@ -4,10 +4,18 @@ html(ng-app='MeetupApp')
     title Meetup Presentation
     link(rel='stylesheet', href='/css/bootstrap.min.css')
     link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/custom.css')
 
-  body
+  body(ng-controller="Presenter")
     include layouts/header
-    include content/dash
+
+    .board(ng-hide="current")
+      include content/dash
+
+    .slide(ng-show="current")
+      include content/slider
+
+    include content/sections/footerbar
     include layouts/footer
 
     script(type='text/javascript', src='/js/libs/jquery.min.js')
@@ -16,3 +24,4 @@ html(ng-app='MeetupApp')
     script(type='text/javascript', src='/js/ng/app.js')
     script(type='text/javascript', src='/js/ng/slides.js')
     script(type='text/javascript', src='/js/ng/resources.js')
+    script(type='text/javascript', src='/js/ng/presenter.js')

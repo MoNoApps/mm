@@ -37,4 +37,14 @@ Slides.prototype.Seed = function(req, res){
   res.json({message:'End Seed'});
 };
 
+Slides.prototype.GetOne = function(req, res){
+  if(!req.params.order){
+    return res.send(400);
+  }
+
+  model.Find({order: parseInt(req.params.order)}, function(err, results){
+    res.json(results);
+  });
+};
+
 module.exports.Slides = Slides;

@@ -29,6 +29,7 @@ app.post('/v1/slide',            slides.Create);
 app.put('/v1/slide',             slides.Update);
 app.delete('/v1/slide',          slides.Remove);
 app.get('/v1/slides/seed',       slides.Seed);
+app.get('/v1/slide/:order',      slides.GetOne);
 
 //resources
 app.get('/v1/resources',            resources.List);
