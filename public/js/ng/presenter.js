@@ -5,7 +5,10 @@ app.controller('Presenter', function Presenter($scope, $http, $timeout) {
   $scope.get_slide = function(){
     $http.get(API + 'slide/' + $scope.current).
       success(function(data, status, headers, config) {
-        $scope.slide = data;
+        if(data.length){
+          $scope.slide = data[0];
+          console.log($scope.slide)
+        }
       }).
       error(function(data, status, headers, config) {
         console.log(data)
