@@ -10,6 +10,7 @@ html(ng-app='MeetupApp')
     , ng-keyup="evalMyKey($event)")
 
     include layouts/header
+    include layouts/navbar
 
     .board(ng-hide="current")
       include content/dash
@@ -17,7 +18,7 @@ html(ng-app='MeetupApp')
     .slide(ng-show="current")
       include content/slider
 
-    include content/sections/footerbar
+
     include layouts/footer
 
     script(type='text/javascript', src='/js/libs/jquery.min.js')
