@@ -6,7 +6,9 @@ html(ng-app='MeetupApp')
     link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href='/css/custom.css')
 
-  body(ng-controller="Presenter")
+  body(ng-controller="Presenter"
+    , ng-keyup="evalMyKey($event)")
+
     include layouts/header
 
     .board(ng-hide="current")
