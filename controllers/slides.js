@@ -34,7 +34,7 @@ Slides.prototype.Seed = function(req, res){
   for (var idx in slides_seed){
     model.Insert(slides_seed[idx]);
   }
-  res.json({message:'End Seed'});
+  res.json({message:'End Slides Seed'});
 };
 
 Slides.prototype.GetOne = function(req, res){

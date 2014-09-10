@@ -3,9 +3,15 @@
     "order": 1,
     "title": "MongoDB Overview",
     "sitemap": {
-      "link": "https://www.mongodb.com",
-      "sitemap": {
-        "link": "https://www.mongodb.com/mongodb-overview"
+      "0": {
+        "name": "MongoDB",
+        "link": "https://www.mongodb.com",
+        "order": 0
+      },
+      "1": {
+        "name": "About MongoDB",
+        "link": "https://www.mongodb.com/mongodb-overview",
+        "order": 1
       }
     },
     "body": {

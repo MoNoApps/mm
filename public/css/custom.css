@@ -1,3 +1,7 @@
 .screen {
   min-height: 500px;
 }
+
+.ext-video {
+  height: 255px;
+}

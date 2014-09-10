@@ -3,14 +3,22 @@
     .col-md-12
       h1(ng-bind="slide.title")
     .col-md-6
-      div(ng-repeat=("(key, value) in slide.body"))
-        div(ng-if=("key === 'p'"))
-          p(ng-bind="value")
-        div(ng-if=("key === 'list'"))
-          div(ng-if=("value.type === 'list-with-span'"))
-            include lists/span
-        div(ng-if=("key === 'list'"))
-          div(ng-if=("value.type === 'list-with-image'"))
-            include lists/image
+      .row
+        .col-md-12
+          include partials/sitemap
+      div(ng-repeat="(key, value) in slide.body")
+        .row
+          .col-md-12(ng-if="key === 'p'")
+            p(ng-bind="value")
+      div(ng-repeat="(key, value) in slide.body")
+        .row
+          .col-md-12(ng-if="key === 'list'")
+            div(ng-if="value.type === 'list-with-span'")
+              include lists/span
+          div(ng-if="key === 'list'")
+            div(ng-if="value.type === 'list-with-image'")
+              include lists/image
     .col-md-6
-      | Video
+      .row
+        .col-md-12
+          include partials/video
