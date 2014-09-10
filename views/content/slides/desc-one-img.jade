@@ -8,8 +8,9 @@
           include partials/sitemap
       div(ng-repeat="(key, value) in slide.body")
         .row
-          .col-md-12(ng-if="key === 'p'")
-            p(ng-bind="value")
+          div(ng-repeat="(k, v) in value")
+            .col-md-12(ng-if="k === 'p'")
+              p(ng-bind="v")
       div(ng-repeat="(key, value) in slide.body")
         .row
           .col-md-12(ng-if="key === 'list'")
