@@ -1,0 +1,6 @@
+.col-md-12(ng-repeat="(key, value) in v.items")
+  .col-md-2
+    image.img-mini(ng-src="{{value.image}}")
+  .col-md-10
+    h4(ng-bind="value.title")
+    p(ng-bind="value.body.p")
