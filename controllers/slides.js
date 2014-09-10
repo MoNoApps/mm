@@ -30,11 +30,17 @@ Slides.prototype.Remove = function(req, res){
 };
 
 Slides.prototype.Seed = function(req, res){
-  slides_seed =  require('../seed/slides');
-  for (var idx in slides_seed){
-    model.Insert(slides_seed[idx]);
-  }
-  res.json({message:'End Slides Seed'});
+  model.Count({}, function(err, count){
+    if(count){
+      return res.json({message:'Already with seed. Prevent override.'});
+    }else{
+      slides_seed =  require('../seed/slides');
+      for (var idx in slides_seed){
+        model.Insert(slides_seed[idx]);
+      }
+      res.json({message:'End Slides Seed'});
+    }
+  });
 };
 
 Slides.prototype.GetOne = function(req, res){

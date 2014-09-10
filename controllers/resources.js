@@ -30,11 +30,17 @@ Resources.prototype.Remove = function(req, res){
 };
 
 Resources.prototype.Seed = function(req, res){
-  resources_seed = require('../seed/resources');
-  for (var idx in resources_seed){
-    model.Insert(resources_seed[idx]);
-  }
-  res.json({message:'End Resources Seed'});
+  model.Count({}, function(err, count){
+    if(count){
+      return res.json({message:'Already with seed. Prevent override.'});
+    }else{
+      resources_seed = require('../seed/resources');
+      for (var idx in resources_seed){
+        model.Insert(resources_seed[idx]);
+      }
+      res.json({message:'End Resources Seed'});
+    }
+  });
 };
 
 module.exports.Resources = Resources;
