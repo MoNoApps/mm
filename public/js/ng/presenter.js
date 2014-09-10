@@ -1,6 +1,10 @@
 app.controller('Presenter', function Presenter($scope, $http, $timeout) {
-  $scope.current = 0;
-  $scope.slide = {};
+
+  var init = function(){
+    $scope.current = 0;
+    $scope.slide = {};
+    location.hash = "/";
+  };
 
   $scope.get_slide = function(){
     $http.get(API + 'slide/' + $scope.current).
@@ -9,6 +13,8 @@ app.controller('Presenter', function Presenter($scope, $http, $timeout) {
           $timeout(function(){
             $scope.slide = data[0];
           },100);
+        }else{
+          init();
         }
       }).
       error(function(data, status, headers, config) {
@@ -20,8 +26,6 @@ app.controller('Presenter', function Presenter($scope, $http, $timeout) {
     if($scope.current){
       location.hash = "#" + $scope.current + "";
       $scope.get_slide();
-    }else{
-      location.hash = "/";
     }
   };
 
@@ -54,5 +58,5 @@ app.controller('Presenter', function Presenter($scope, $http, $timeout) {
     }
   };
 
-  updateHash();
+  init();
 });
