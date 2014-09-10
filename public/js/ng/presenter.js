@@ -6,8 +6,10 @@ app.controller('Presenter', function Presenter($scope, $http, $timeout) {
     $http.get(API + 'slide/' + $scope.current).
       success(function(data, status, headers, config) {
         if(data.length){
-          $scope.slide = data[0];
-          console.log($scope.slide)
+          $timeout(function(){
+            $scope.slide = data[0];
+          },100);
+
         }
       }).
       error(function(data, status, headers, config) {
@@ -16,8 +18,12 @@ app.controller('Presenter', function Presenter($scope, $http, $timeout) {
   };
 
   var updateHash = function(){
-    location.hash = "#" + $scope.current + "";
-    $scope.get_slide();
+    if($scope.current){
+      location.hash = "#" + $scope.current + "";
+      $scope.get_slide();
+    }else{
+      location.hash = "/";
+    }
   };
 
   $scope.prev = function(){
@@ -34,4 +40,6 @@ app.controller('Presenter', function Presenter($scope, $http, $timeout) {
     $scope.current = $scope.current + 1;
     updateHash();
   };
+
+  updateHash();
 });

@@ -1,7 +1,8 @@
 div.col-md-4(ng-controller="Resources")
-    h1 Resources
-    .list-group
-      a.list-group-item(ng-repeat="res in resources")
-        h4.list-group-item-heading(ng-bind="res.name")
-        p.list-group-item-text
-          span(ng-bind="res.description")
+  h1 Resources
+  .list-group
+    a.list-group-item(ng-repeat="res in resources")
+      h4.list-group-item-heading(ng-bind="res.name")
+      p.list-group-item-text
+        span(ng-bind="res.description")
+  div(ng-show="!resources.length") No slides data found.

@@ -1,2 +1,7 @@
 .screen
-  include slides/generic
+  div(ng-if="slide.type === 'desc-list-video'")
+    include slides/desc-list-video
+  div(ng-if="slide.type === 'desc-img-list'")
+    include slides/desc-img-list
+  div(ng-if="slide.type === 'desc-one-img'")
+    include slides/desc-one-img
