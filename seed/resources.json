@@ -1,22 +1,26 @@
-{
-  "0": {
-    "name": "MongoDB",
-    "link": "https://www.mongodb.org/",
-    "description": "Our current topic."
+[{
+    "name": "In-Browser Tutorial",
+    "link": "http://try.mongodb.org/",
+    "description": "Online command console"
   },
-  "1": {
-    "name": "Github",
-    "link": "https://github.com/dmartz86/mm",
-    "description": "The repo to work with."
+  {
+    "name": "Downloads",
+    "link": "http://mongodb.org/downloads",
+    "description": "Lot of downloadable resources"
   },
-  "2": {
-    "name": "NodeJS",
-    "link": "https://nodejs.org",
-    "description": "Nice V8 engine to run JS apps."
+  {
+    "name": "MogoDB Manual",
+    "link": "http://docs.mongodb.org/manual",
+    "description": "Nice Manual for MongoDB"
   },
-  "3":{
-    "name": "NPM mongodb",
-    "link": "http://mongodb.github.io/node-mongodb-native/api-generated/collection.html",
-    "description": "Nice V8 engine to run JS apps."
+  {
+    "name": "Online Education",
+    "link": "http://education.mongodb.com",
+    "description": "Online courses"
+  },
+  {
+    "name": "Presentations",
+    "link": "http://mongodb.com/presentations",
+    "description": "Online courses"
   }
-}
+]
