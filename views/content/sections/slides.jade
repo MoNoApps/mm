@@ -1,7 +1,7 @@
 div.col-md-4(ng-controller="Slides")
   h1 Slides
   .list-group
-    a.list-group-item(ng-repeat="slide in slides |  orderBy : order"
+    a.list-group-item(ng-repeat="slide in slides |  orderBy : 'order'"
     , ng-click="setCurrent(slide)")
       span(ng-bind="'#' + slide.order + ' ' + slide.title")
   div(ng-show="!slides.length") No slides data found.
