@@ -1,3 +1,7 @@
+body {
+  cursor: none;
+}
+
 .screen {
   min-height: 500px;
 }
@@ -8,4 +12,8 @@
 
 .img-mini {
   width: 90px;
+}
+
+.reader {
+  font-size: 25px;
 }

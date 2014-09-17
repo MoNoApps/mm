@@ -1,0 +1,10 @@
+.container
+  .row
+    .col-md-12
+      h1(ng-bind="slide.title")
+    .col-md-12
+      include partials/sitemap
+    .col-md-12(ng-repeat="(key, value) in slide.body")
+      div(ng-repeat="(k, v) in value")
+        .col-md-12.reader(ng-if="k === 'p'")
+          p(ng-bind="v")

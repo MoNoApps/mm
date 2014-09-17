@@ -1,16 +1,16 @@
 [
   {
     "order": 1,
-    "type":"desc-one-img",
-    "title":"MongoDB is an open-source, general purpose database.",
+    "type":"des-paragraph-list",
+    "title":"MongoDB ...",
     "body": [
-      {"p": "Instead of storing data in rows and columns as one would with a relational database, MongoDB uses a document data model, and stores a binary form of JSON documents called BSON. Documents contain one or more fields, and each field contains a value of a specific data type, including arrays and binary data. Documents are stored in collections, and collections are stored in databases. It may be helpful to think of documents as roughly equivalent to rows in a relational database; fields as equivalent to columns; and collections as tables. There are no fixed schemas in MongoDB, so documents can vary in structure and can be adapted dynamically."},
-      {"p": "MongoDB provides full index support, including secondary, compound and geospatial indexes. MongoDB also features a rich query language; atomic update modifiers; text search; the Aggregation Framework for analytics similar to SQL GROUP BY operations; and MapReduce for complex, in-place data analysis."},
-      {"p": "Built-in replication with automated failover provides high availability. Auto-sharding enables horizontal scaling for large deployments. MongoDB also provides native, idiomatic drivers for all popular programming languages and frameworks to make development natural."}
-    ],
-    "image": "https://www.mongodb.com/sites/mongodb.com/files/media/mongodb_illustration_enterprise_transparent.gif",
-    "links": [
-      "https://www.mongodb.com/products/subscriptions"
+      {"p": "- Document data model"},
+      {"p": "- Binary JSON/BSON"},
+      {"p": "- dbs and  collections"},
+      {"p": "- Flexible schema"},
+      {"p": "- Full index"},
+      {"p": "- Aggregation Framework"},
+      {"p": "- Replication"}
     ]
   }
 ]
