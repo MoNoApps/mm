@@ -4,13 +4,41 @@
     "type":"des-paragraph-list",
     "title":"MongoDB ...",
     "body": [
-      {"p": "- Document data model"},
-      {"p": "- Binary JSON/BSON"},
-      {"p": "- dbs and  collections"},
-      {"p": "- Flexible schema"},
-      {"p": "- Full index"},
-      {"p": "- Aggregation Framework"},
-      {"p": "- Replication"}
+      {
+        "div": {
+          "h2": " Document data model"
+        }
+      },
+      {
+        "div": {
+          "h2": "Binary JSON/BSON"
+        }
+      },
+      {
+        "div": {
+          "h2": "dbs and  collections"
+        }
+      },
+      {
+        "div": {
+          "h2": "Flexible schema"
+        }
+      },
+      {
+        "div": {
+          "h2": "Full index"
+        }
+      },
+      {
+        "div": {
+          "h2": "Aggregation Framework"
+        }
+      },
+      {
+        "div": {
+          "h2": "Replication"
+        }
+      }
     ]
   }
 ]
