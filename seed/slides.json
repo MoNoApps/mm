@@ -6,7 +6,7 @@
     "body": [
       {
         "div": {
-          "h2": " Document data model"
+          "h2": "Document data model"
         }
       },
       {
@@ -16,7 +16,7 @@
       },
       {
         "div": {
-          "h2": "dbs and  collections"
+          "h2": "Dbs and  collections"
         }
       },
       {
@@ -37,6 +37,66 @@
       {
         "div": {
           "h2": "Replication"
+        }
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "type":"desc-one-img",
+    "title":"Mongo Data Model - Nested",
+    "body": [
+      {
+        "p": "Embedded data models allow applications to store related pieces of information in the same database record. As a result, applications may need to issue fewer queries and updates to complete common operations."
+      },
+      {
+        "p": "Compared with 'contains'"
+      },
+      {
+        "p": "One to many"
+      },
+      {
+        "p": "In general, embedding provides better performance for read operations, as well as the ability to request and retrieve related data in a single database operation."
+      },
+      {
+        "p": "Embedded data models make it possible to update related data in a single atomic write operation."
+      },
+      {
+        "p": "Max size: 16 MB"
+      }
+    ],
+    "image": "http://docs.mongodb.org/manual/_images/data-model-denormalized.png"
+  },
+  {
+    "order": 3,
+    "type":"desc-one-img",
+    "title":"Mongo Data Model - Normalized",
+    "body": [
+      {
+        "p": "Between documents."
+      },
+      {
+        "p": "Prevent duplicated data"
+      },
+      {
+        "p": "Complex many to many"
+      }
+    ],
+    "image": "http://docs.mongodb.org/manual/_images/data-model-normalized.png"
+  },
+  {
+    "order": 4,
+    "type":"des-paragraph-list",
+    "title":"Hands on",
+    "body": [
+      {
+        "div": {
+          "h2": "'mongod --config' at a glance"
+        }
+      },
+      {
+        "div": {
+          "h2": "dojo"
         }
       }
     ]
